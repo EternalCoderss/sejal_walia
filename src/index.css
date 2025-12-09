@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-dark-800;
+  }
+  
+  body {
+    @apply bg-dark-950 text-dark-50 font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-500;
+  }
+
+  /* Gradient text - Vibrant Apple Intelligence style */
+  .gradient-text {
+    @apply bg-gradient-to-r from-fuchsia-500 via-purple-500 to-violet-600 bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+  
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+
+  /* Animated gradient background */
+  .gradient-bg {
+    @apply bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900;
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+
+  /* Button styles */
+  .btn-primary {
+    @apply px-8 py-3 bg-gradient-to-r from-primary-600 to-primary-700 text-white font-semibold rounded-lg 
+           hover:from-primary-500 hover:to-primary-600 transition-all duration-300 
+           hover:shadow-lg hover:shadow-primary-500/50 hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 bg-transparent border-2 border-primary-500 text-primary-400 font-semibold rounded-lg 
+           hover:bg-primary-500 hover:text-white transition-all duration-300 
+           hover:shadow-lg hover:shadow-primary-500/50;
+  }
+
+  /* Section padding */
+  .section {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/20;
+  }
+}
+
+@layer utilities {
+  /* Text glow effect */
+  .text-glow {
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+  }
+
+  /* Box glow effect */
+  .box-glow {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+  }
+}

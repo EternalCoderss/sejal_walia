@@ -7,7 +7,7 @@ export const personalInfo = {
   bio: "I am a Business Development Executive with 2 years of experience on Upwork, specializing in proposal writing, client communication, and lead generation. I excel in drafting persuasive proposals, handling client chats professionally, and converting leads into long-term clients.",
   email: "Sejalwalia90@gmail.com",
   phone: "+91 XXXXX XXXXX",
-  location: "India",
+  location: "Chandigarh , India",
   linkedin: "www.linkedin.com/in/sejal-walia3008",
   image: "/images/resume_page_1.png" // Resume image
 };

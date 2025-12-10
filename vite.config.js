@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // base: '/sejal_walia/', // Only needed for GitHub Pages deployment
+  base: '/sejal_walia/',
 })
